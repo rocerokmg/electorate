@@ -105,14 +105,67 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="dist\css\adminlte.css" />
+    <Content Include="dist\css\adminlte.min.css" />
+    <Content Include="dist\css\alt\adminlte.components.css" />
+    <Content Include="dist\css\alt\adminlte.components.min.css" />
+    <Content Include="dist\css\alt\adminlte.core.css" />
+    <Content Include="dist\css\alt\adminlte.core.min.css" />
+    <Content Include="dist\css\alt\adminlte.extra-components.css" />
+    <Content Include="dist\css\alt\adminlte.extra-components.min.css" />
+    <Content Include="dist\css\alt\adminlte.pages.css" />
+    <Content Include="dist\css\alt\adminlte.pages.min.css" />
+    <Content Include="dist\css\alt\adminlte.plugins.css" />
+    <Content Include="dist\css\alt\adminlte.plugins.min.css" />
+    <Content Include="dist\img\AdminLTELogo.png" />
+    <Content Include="dist\img\ajax-loader.gif" />
+    <Content Include="dist\img\avatar.png" />
+    <Content Include="dist\img\avatar04.png" />
+    <Content Include="dist\img\avatar2.png" />
+    <Content Include="dist\img\avatar3.png" />
+    <Content Include="dist\img\avatar5.png" />
+    <Content Include="dist\img\boxed-bg.jpg" />
+    <Content Include="dist\img\boxed-bg.png" />
+    <Content Include="dist\img\circle.png" />
+    <Content Include="dist\img\cockfight.png" />
+    <Content Include="dist\img\credit\american-express.png" />
+    <Content Include="dist\img\credit\cirrus.png" />
+    <Content Include="dist\img\credit\mastercard.png" />
+    <Content Include="dist\img\credit\mestro.png" />
+    <Content Include="dist\img\credit\paypal.png" />
+    <Content Include="dist\img\credit\paypal2.png" />
+    <Content Include="dist\img\credit\visa.png" />
+    <Content Include="dist\img\default-150x150.png" />
+    <Content Include="dist\img\icons.png" />
+    <Content Include="dist\img\photo1.png" />
+    <Content Include="dist\img\photo2.png" />
+    <Content Include="dist\img\photo3.jpg" />
+    <Content Include="dist\img\photo4.jpg" />
+    <Content Include="dist\img\prod-1.jpg" />
+    <Content Include="dist\img\prod-2.jpg" />
+    <Content Include="dist\img\prod-3.jpg" />
+    <Content Include="dist\img\prod-4.jpg" />
+    <Content Include="dist\img\prod-5.jpg" />
+    <Content Include="dist\img\under-construction-1582366-1277x596.jpg" />
+    <Content Include="dist\img\user1-128x128.jpg" />
+    <Content Include="dist\img\user2-160x160.jpg" />
+    <Content Include="dist\img\user3-128x128.jpg" />
+    <Content Include="dist\img\user4-128x128.jpg" />
+    <Content Include="dist\img\user5-128x128.jpg" />
+    <Content Include="dist\img\user6-128x128.jpg" />
+    <Content Include="dist\img\user7-128x128.jpg" />
+    <Content Include="dist\img\user8-128x128.jpg" />
+    <Content Include="dist\js\adminlte.js" />
+    <Content Include="dist\js\adminlte.min.js" />
+    <Content Include="dist\js\demo.js" />
+    <Content Include="dist\js\pages\dashboard.js" />
+    <Content Include="dist\js\pages\dashboard2.js" />
+    <Content Include="dist\js\pages\dashboard3.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -124,7 +177,404 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="dist\css\adminlte.css.map" />
+    <Content Include="dist\css\adminlte.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.components.css.map" />
+    <Content Include="dist\css\alt\adminlte.components.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.core.css.map" />
+    <Content Include="dist\css\alt\adminlte.core.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.extra-components.css.map" />
+    <Content Include="dist\css\alt\adminlte.extra-components.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.pages.css.map" />
+    <Content Include="dist\css\alt\adminlte.pages.min.css.map" />
+    <Content Include="dist\css\alt\adminlte.plugins.css.map" />
+    <Content Include="dist\css\alt\adminlte.plugins.min.css.map" />
+    <Content Include="dist\js\.eslintrc.json" />
+    <Content Include="dist\js\adminlte.js.map" />
+    <Content Include="dist\js\adminlte.min.js.map" />
+    <Content Include="Index.html" />
+    <Content Include="plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="plugins\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="plugins\daterangepicker\bower.json" />
+    <Content Include="plugins\daterangepicker\example\browserify\README.md" />
+    <Content Include="plugins\ekko-lightbox\ekko-lightbox.js.map" />
+    <Content Include="plugins\ekko-lightbox\ekko-lightbox.min.js.map" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="plugins\icheck-bootstrap\LICENSE" />
+    <Content Include="plugins\jquery\jquery.min.map" />
+    <Content Include="plugins\jquery\jquery.slim.min.map" />
+    <Content Include="plugins\summernote\font\summernote.eot" />
+    <Content Include="plugins\summernote\font\summernote.ttf" />
+    <Content Include="plugins\summernote\font\summernote.woff" />
+    <Content Include="plugins\summernote\font\summernote.woff2" />
+    <Content Include="plugins\summernote\summernote-bs4.js.map" />
+    <Content Include="plugins\summernote\summernote-bs4.min.js.map" />
+    <Content Include="plugins\summernote\summernote-lite.js.map" />
+    <Content Include="plugins\summernote\summernote-lite.min.js.map" />
+    <Content Include="plugins\summernote\summernote.js.map" />
+    <Content Include="plugins\summernote\summernote.min.js.map" />
+    <Content Include="WebForms\wfLogin.aspx" />
+    <Content Include="WebForms\wfMain.aspx" />
+    <Content Include="WebForms\wfSupportBase.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="plugins\datatables-bs4\css\dataTables.bootstrap4.css" />
+    <Content Include="plugins\datatables-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-bs4\js\dataTables.bootstrap4.js" />
+    <Content Include="plugins\datatables-bs4\js\dataTables.bootstrap4.min.js" />
+    <Content Include="plugins\datatables-responsive\css\responsive.bootstrap4.css" />
+    <Content Include="plugins\datatables-responsive\css\responsive.bootstrap4.min.css" />
+    <Content Include="plugins\datatables-responsive\js\dataTables.responsive.js" />
+    <Content Include="plugins\datatables-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="plugins\datatables-responsive\js\responsive.bootstrap4.js" />
+    <Content Include="plugins\datatables-responsive\js\responsive.bootstrap4.min.js" />
+    <Content Include="plugins\daterangepicker\daterangepicker.css" />
+    <Content Include="plugins\daterangepicker\daterangepicker.js" />
+    <Content Include="plugins\daterangepicker\drp.png" />
+    <Content Include="plugins\daterangepicker\example\amd\index.html" />
+    <Content Include="plugins\daterangepicker\example\amd\main.js" />
+    <Content Include="plugins\daterangepicker\example\amd\require.js" />
+    <Content Include="plugins\daterangepicker\example\browserify\bundle.js" />
+    <Content Include="plugins\daterangepicker\example\browserify\index.html" />
+    <Content Include="plugins\daterangepicker\example\browserify\main.js" />
+    <Content Include="plugins\daterangepicker\moment.min.js" />
+    <Content Include="plugins\daterangepicker\package.js" />
+    <Content Include="plugins\daterangepicker\website.css" />
+    <Content Include="plugins\daterangepicker\website.js" />
+    <Content Include="plugins\daterangepicker\website\index.html" />
+    <Content Include="plugins\daterangepicker\website\website.css" />
+    <Content Include="plugins\daterangepicker\website\website.js" />
+    <Content Include="plugins\ekko-lightbox\ekko-lightbox.css" />
+    <Content Include="plugins\ekko-lightbox\ekko-lightbox.js" />
+    <Content Include="plugins\ekko-lightbox\ekko-lightbox.min.js" />
+    <Content Include="plugins\fontawesome-free\css\all.css" />
+    <Content Include="plugins\fontawesome-free\css\all.min.css" />
+    <Content Include="plugins\fontawesome-free\css\brands.css" />
+    <Content Include="plugins\fontawesome-free\css\brands.min.css" />
+    <Content Include="plugins\fontawesome-free\css\fontawesome.css" />
+    <Content Include="plugins\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="plugins\fontawesome-free\css\regular.css" />
+    <Content Include="plugins\fontawesome-free\css\regular.min.css" />
+    <Content Include="plugins\fontawesome-free\css\solid.css" />
+    <Content Include="plugins\fontawesome-free\css\solid.min.css" />
+    <Content Include="plugins\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="plugins\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="plugins\fontawesome-free\css\v4-shims.css" />
+    <Content Include="plugins\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="plugins\icheck-bootstrap\icheck-bootstrap.css" />
+    <Content Include="plugins\icheck-bootstrap\icheck-bootstrap.min.css" />
+    <Content Include="plugins\icheck-bootstrap\icheck.min.js" />
+    <Content Include="plugins\icheck-bootstrap\skins\all.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\aero%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\aero.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\aero.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\blue%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\blue.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\blue.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\flat%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\flat.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\flat.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\green%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\green.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\green.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\grey%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\grey.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\grey.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\orange%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\orange.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\orange.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\pink%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\pink.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\pink.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\purple%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\purple.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\purple.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\red%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\red.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\red.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\yellow%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\yellow.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\yellow.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\flat\_all.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\futurico\futurico%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\futurico\futurico.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\futurico\futurico.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\aero.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\blue.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\green.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\grey.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\line%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\line.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\line.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\orange.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\pink.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\purple.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\red.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\yellow.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\line\_all.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\aero%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\aero.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\aero.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\blue%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\blue.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\blue.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\green%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\green.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\green.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\grey%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\grey.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\grey.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\minimal%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\minimal.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\minimal.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\orange%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\orange.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\orange.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\pink%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\pink.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\pink.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\purple%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\purple.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\purple.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\red%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\red.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\red.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\yellow%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\yellow.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\yellow.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\minimal\_all.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\polaris\polaris%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\polaris\polaris.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\polaris\polaris.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\aero%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\aero.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\aero.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\blue%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\blue.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\blue.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\green%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\green.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\green.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\grey%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\grey.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\grey.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\orange%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\orange.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\orange.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\pink%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\pink.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\pink.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\purple%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\purple.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\purple.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\red%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\red.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\red.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\square%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\square.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\square.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\yellow%402x.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\yellow.css" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\yellow.png" />
+    <Content Include="plugins\icheck-bootstrap\skins\square\_all.css" />
+    <Content Include="plugins\jquery-ui\AUTHORS.txt" />
+    <Content Include="plugins\jquery-ui\external\jquery\jquery.js" />
+    <Content Include="plugins\jquery-ui\images\ui-icons_444444_256x240.png" />
+    <Content Include="plugins\jquery-ui\images\ui-icons_555555_256x240.png" />
+    <Content Include="plugins\jquery-ui\images\ui-icons_777620_256x240.png" />
+    <Content Include="plugins\jquery-ui\images\ui-icons_777777_256x240.png" />
+    <Content Include="plugins\jquery-ui\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="plugins\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="plugins\jquery-ui\jquery-ui.css" />
+    <Content Include="plugins\jquery-ui\jquery-ui.js" />
+    <Content Include="plugins\jquery-ui\jquery-ui.min.css" />
+    <Content Include="plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="plugins\jquery-ui\jquery-ui.structure.css" />
+    <Content Include="plugins\jquery-ui\jquery-ui.structure.min.css" />
+    <Content Include="plugins\jquery-ui\jquery-ui.theme.css" />
+    <Content Include="plugins\jquery-ui\jquery-ui.theme.min.css" />
+    <Content Include="plugins\jquery-ui\LICENSE.txt" />
+    <Content Include="plugins\jquery\core.js" />
+    <Content Include="plugins\jquery\jquery.js" />
+    <Content Include="plugins\jquery\jquery.min.js" />
+    <Content Include="plugins\jquery\jquery.slim.js" />
+    <Content Include="plugins\jquery\jquery.slim.min.js" />
+    <Content Include="plugins\overlayScrollbars\css\OverlayScrollbars.css" />
+    <Content Include="plugins\overlayScrollbars\css\OverlayScrollbars.min.css" />
+    <Content Include="plugins\overlayScrollbars\js\jquery.overlayScrollbars.js" />
+    <Content Include="plugins\overlayScrollbars\js\jquery.overlayScrollbars.min.js" />
+    <Content Include="plugins\overlayScrollbars\js\OverlayScrollbars.js" />
+    <Content Include="plugins\overlayScrollbars\js\OverlayScrollbars.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-ar-AR.js" />
+    <Content Include="plugins\summernote\lang\summernote-ar-AR.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-ar-AR.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-az-AZ.js" />
+    <Content Include="plugins\summernote\lang\summernote-az-AZ.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-az-AZ.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-bg-BG.js" />
+    <Content Include="plugins\summernote\lang\summernote-bg-BG.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-bg-BG.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-ca-ES.js" />
+    <Content Include="plugins\summernote\lang\summernote-ca-ES.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-ca-ES.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-cs-CZ.js" />
+    <Content Include="plugins\summernote\lang\summernote-cs-CZ.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-cs-CZ.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-da-DK.js" />
+    <Content Include="plugins\summernote\lang\summernote-da-DK.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-da-DK.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-de-DE.js" />
+    <Content Include="plugins\summernote\lang\summernote-de-DE.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-de-DE.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-el-GR.js" />
+    <Content Include="plugins\summernote\lang\summernote-el-GR.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-el-GR.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-es-ES.js" />
+    <Content Include="plugins\summernote\lang\summernote-es-ES.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-es-ES.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-es-EU.js" />
+    <Content Include="plugins\summernote\lang\summernote-es-EU.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-es-EU.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-fa-IR.js" />
+    <Content Include="plugins\summernote\lang\summernote-fa-IR.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-fa-IR.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-fi-FI.js" />
+    <Content Include="plugins\summernote\lang\summernote-fi-FI.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-fi-FI.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-fr-FR.js" />
+    <Content Include="plugins\summernote\lang\summernote-fr-FR.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-fr-FR.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-gl-ES.js" />
+    <Content Include="plugins\summernote\lang\summernote-gl-ES.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-gl-ES.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-he-IL.js" />
+    <Content Include="plugins\summernote\lang\summernote-he-IL.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-he-IL.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-hr-HR.js" />
+    <Content Include="plugins\summernote\lang\summernote-hr-HR.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-hr-HR.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-hu-HU.js" />
+    <Content Include="plugins\summernote\lang\summernote-hu-HU.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-hu-HU.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-id-ID.js" />
+    <Content Include="plugins\summernote\lang\summernote-id-ID.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-id-ID.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-it-IT.js" />
+    <Content Include="plugins\summernote\lang\summernote-it-IT.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-it-IT.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-ja-JP.js" />
+    <Content Include="plugins\summernote\lang\summernote-ja-JP.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-ja-JP.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-ko-KR.js" />
+    <Content Include="plugins\summernote\lang\summernote-ko-KR.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-ko-KR.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-lt-LT.js" />
+    <Content Include="plugins\summernote\lang\summernote-lt-LT.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-lt-LT.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-lt-LV.js" />
+    <Content Include="plugins\summernote\lang\summernote-lt-LV.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-lt-LV.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-mn-MN.js" />
+    <Content Include="plugins\summernote\lang\summernote-mn-MN.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-mn-MN.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-nb-NO.js" />
+    <Content Include="plugins\summernote\lang\summernote-nb-NO.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-nb-NO.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-nl-NL.js" />
+    <Content Include="plugins\summernote\lang\summernote-nl-NL.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-nl-NL.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-pl-PL.js" />
+    <Content Include="plugins\summernote\lang\summernote-pl-PL.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-pl-PL.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-pt-BR.js" />
+    <Content Include="plugins\summernote\lang\summernote-pt-BR.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-pt-BR.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-pt-PT.js" />
+    <Content Include="plugins\summernote\lang\summernote-pt-PT.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-pt-PT.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-ro-RO.js" />
+    <Content Include="plugins\summernote\lang\summernote-ro-RO.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-ro-RO.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-ru-RU.js" />
+    <Content Include="plugins\summernote\lang\summernote-ru-RU.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-ru-RU.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-sk-SK.js" />
+    <Content Include="plugins\summernote\lang\summernote-sk-SK.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-sk-SK.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-sl-SI.js" />
+    <Content Include="plugins\summernote\lang\summernote-sl-SI.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-sl-SI.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-sr-RS-Latin.js" />
+    <Content Include="plugins\summernote\lang\summernote-sr-RS-Latin.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-sr-RS-Latin.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-sr-RS.js" />
+    <Content Include="plugins\summernote\lang\summernote-sr-RS.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-sr-RS.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-sv-SE.js" />
+    <Content Include="plugins\summernote\lang\summernote-sv-SE.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-sv-SE.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-ta-IN.js" />
+    <Content Include="plugins\summernote\lang\summernote-ta-IN.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-ta-IN.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-th-TH.js" />
+    <Content Include="plugins\summernote\lang\summernote-th-TH.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-th-TH.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-tr-TR.js" />
+    <Content Include="plugins\summernote\lang\summernote-tr-TR.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-tr-TR.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-uk-UA.js" />
+    <Content Include="plugins\summernote\lang\summernote-uk-UA.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-uk-UA.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-uz-UZ.js" />
+    <Content Include="plugins\summernote\lang\summernote-uz-UZ.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-uz-UZ.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-vi-VN.js" />
+    <Content Include="plugins\summernote\lang\summernote-vi-VN.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-vi-VN.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-zh-CN.js" />
+    <Content Include="plugins\summernote\lang\summernote-zh-CN.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-zh-CN.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\lang\summernote-zh-TW.js" />
+    <Content Include="plugins\summernote\lang\summernote-zh-TW.min.js" />
+    <Content Include="plugins\summernote\lang\summernote-zh-TW.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\plugin\databasic\summernote-ext-databasic.css" />
+    <Content Include="plugins\summernote\plugin\databasic\summernote-ext-databasic.js" />
+    <Content Include="plugins\summernote\plugin\hello\summernote-ext-hello.js" />
+    <Content Include="plugins\summernote\plugin\specialchars\summernote-ext-specialchars.js" />
+    <Content Include="plugins\summernote\summernote-bs4.css" />
+    <Content Include="plugins\summernote\summernote-bs4.js" />
+    <Content Include="plugins\summernote\summernote-bs4.min.css" />
+    <Content Include="plugins\summernote\summernote-bs4.min.js" />
+    <Content Include="plugins\summernote\summernote-bs4.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\summernote-lite.css" />
+    <Content Include="plugins\summernote\summernote-lite.js" />
+    <Content Include="plugins\summernote\summernote-lite.min.css" />
+    <Content Include="plugins\summernote\summernote-lite.min.js" />
+    <Content Include="plugins\summernote\summernote-lite.min.js.LICENSE.txt" />
+    <Content Include="plugins\summernote\summernote.css" />
+    <Content Include="plugins\summernote\summernote.js" />
+    <Content Include="plugins\summernote\summernote.min.css" />
+    <Content Include="plugins\summernote\summernote.min.js" />
+    <Content Include="plugins\summernote\summernote.min.js.LICENSE.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -161,28 +611,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -196,15 +626,38 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\wfLogin.aspx.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\wfLogin.aspx.designer.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\wfMain.aspx.cs">
+      <DependentUpon>wfMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\wfMain.aspx.designer.cs">
+      <DependentUpon>wfMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\wfSupportBase.aspx.cs">
+      <DependentUpon>wfSupportBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\wfSupportBase.aspx.designer.cs">
+      <DependentUpon>wfSupportBase.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

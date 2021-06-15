@@ -6,65 +6,273 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title>Electorate Tracker</title>
 
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
+    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet" />
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <asp:ContentPlaceHolder ID="pageHeader" runat="server">
+    </asp:ContentPlaceHolder>
+
 </head>
-<body>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed small">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
+                <asp:ScriptReference Path="~/plugins/jquery/jquery.min.js" />
+                <asp:ScriptReference Path="~/plugins/bootstrap/js/bootstrap.bundle.min.js" />
+                <asp:ScriptReference Path="~/dist/js/adminlte.js" />
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <asp:UpdateProgress ID="updateprogress" runat="server">
+                    <ProgressTemplate>
+                        <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #ffffff; opacity: 0.7;">
+                            <asp:Image ID="imgupdateprogress" runat="server" ImageUrl="~/dist/img/ajax-loader.gif" AlternateText="loading ..." ToolTip="loading ..." Style="padding: 10px; position: fixed; top: 45%; left: 50%;" />
+                        </div>
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+
+                <div class="wrapper">
+                    <!-- Preloader -->
+
+                    <!-- Navbar -->
+                    <nav class="main-header navbar navbar-expand navbar-dark">
+                        <!-- Left navbar links -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                            </li>
+                        </ul>
+
+                        <!-- Right navbar links -->
+                        <ul class="navbar-nav ml-auto">
+                            <!-- Notifications Dropdown Menu -->
+                            <li class="nav-item">
+                                <div class="btn-group">
+
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+
+                                        <%--<li class="dropdown-item text-center text-body">Select Manning Agency</li>--%>
+                                        <asp:HiddenField ID="hfArenaList" runat="server" />
+                                        <asp:HiddenField ID="hfArenaID" runat="server" />
+                                        <asp:HiddenField ID="hfIndex" runat="server" />
+                                        <asp:HiddenField ID="hfDisplayHandler" runat="server" />
+                                        <asp:HiddenField ID="hfModuleAccess" runat="server" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                                    <span class="dropdown-item dropdown-header">Quick Links</span>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="UserProfile" class="dropdown-item">
+                                        <i class="fas fa-user-alt mr-2"></i>View My Profile
+                                    </a>
+
+                                    <a href="LearningResources" class="dropdown-item">
+                                        <i class="fas fa-book-open mr-2"></i>View Learning Resources
+                                    </a>
+                                    <a href="Calendar" class="dropdown-item">
+                                        <i class="fas fa-calendar mr-2"></i>View Calendar
+                                    </a>
+                                    <a href="ContactUs" class="dropdown-item">
+                                        <i class="fas fa-question-circle mr-2"></i>Contact Us
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="Login" class="dropdown-item">
+                                        <i class="fas fa-sign-out-alt mr-2"></i>Signout
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                                    <i class="fas fa-expand-arrows-alt"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                    <!-- /.navbar -->
+
+                    <!-- Main Sidebar Container -->
+                    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                        <!-- Brand Logo -->
+                        <a href="index3.html" class="brand-link navbar-navy">
+                            <%--<img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                        style="opacity: .8">--%>
+                            <span><i class="fa fa-address-book"></i></span>
+                            <span class="brand-text font-weight-bold">SF Tracker</span>
+                        </a>
+
+                        <!-- Sidebar -->
+                        <div class="sidebar">
+                            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                                <div class="image" hidden="hidden">
+                                    <asp:Image ID="imgArenaLogo" CssClass="img-circle elevation-2" runat="server" alt="User Image" Style="height: 40px; width: 40px;" />
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="d-block">
+                                        <asp:Label ID="lblArena" runat="server" Text="Dumagete" Visible="false"></asp:Label>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Sidebar user panel (optional) -->
+                            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                                <div class="image">
+                                    <asp:Image ID="Image1" CssClass="img-circle elevation-2" runat="server" alt="User Image" Style="height: 40px; width: 40px;" />
+                                </div>
+                                <div class="info">
+                                    <a href="#" class="d-block">
+                                        <asp:Label ID="lblFullName" runat="server" Text=""></asp:Label>
+                                        <br />
+                                        <asp:Label ID="lblType" runat="server" Text=""></asp:Label>
+                                        <asp:Label ID="lblStatus" runat="server" Text=""></asp:Label>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <!-- Sidebar Menu -->
+
+                            <nav class="mt-2">
+                                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                                    <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+                                    <li class="nav-item">
+                                        <a href="Derby" class='nav-link'>
+                                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                                            <p>
+                                                Dashboard                                                         
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="SupportBase" class='nav-link'>
+                                            <i class="nav-icon fas fa-address-book"></i>
+                                            <p>
+                                                Resident                                                         
+                                            </p>
+                                        </a>
+                                    </li>
+                                      <li class="nav-item">
+                                        <a href="Derby" class='nav-link'>
+                                            <i class="nav-icon fas fa-list-alt"></i>
+                                            <p>
+                                                Useful Forms                                                         
+                                            </p>
+                                        </a>
+                                    </li>
+                                 
+                                    <li class="nav-item">
+                                        <a href="GCReports" class='nav-link'>
+                                            <i class="nav-icon fa fa-chart-bar"></i>
+                                            <p>
+                                                Reports                                                         
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                    <li class='nav-item has-treeview'>
+                                        <a href="#" class='nav-link'>
+                                            <i class="nav-icon fas fa-wrench"></i>
+                                            <p>
+                                                Settings
+               
+                                              <i class="fas fa-angle-left right"></i>
+                                            </p>
+                                        </a>
+                                        <ul class='nav nav-treeview'>
+                                            <li class="nav-item">
+                                                <a href="Arena" class='nav-link'>
+                                                    <i class="far fa-circle nav-icon"></i>
+                                                    <p>Arena</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="UserManagement" class='nav-link'>
+                                                    <i class="far fa-circle nav-icon"></i>
+                                                    <p>User Management</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="CockHouse" class='nav-link'>
+                                                    <i class="far fa-circle nav-icon"></i>
+                                                    <p>Cock House</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="ViewLogs" class='nav-link'>
+                                                    <i class="far fa-circle nav-icon"></i>
+                                                    <p>View Logs</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                   
+
+                                    <li class="nav-item">
+                                        <a href="/Login" class="nav-link">
+                                            <i class="nav-icon fas fa-sign-out-alt"></i>
+                                            <p>
+                                                Sign Out                                                         
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- /.sidebar-menu -->
+                        </div>
+
+                        <!-- /.sidebar -->
+                    </aside>
+
+
+                    <div class="content-wrapper">
+                        <div class="container-fluid">
+                            <div class="content-header">
+                                <asp:ContentPlaceHolder ID="BreadCrumbs" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <section class="content">
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Main Footer -->
+                    <footer class="main-footer">
+                        <strong>Copyright &copy; 2021 <a href="#">SF Tracker</a></strong>
+                        All rights reserved.
+   
+                <div class="float-right d-none d-sm-inline-block">
+                    <b>Version</b> 1.0                      
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
+                    </footer>
+
                 </div>
-            </div>
-        </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
-        </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
 
     </form>
 </body>
